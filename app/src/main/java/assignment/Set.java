@@ -5,7 +5,7 @@ public class Set<T> {
 
   public void add(T item) { // O(n)
     int firstFreeSpot = -1; // O(1)
-    for (int i = 0; i<set.length; i++) { // O(n)
+    for (int i = 0; i < set.length; i++) { // O(n)
       if (set[i] == item) { // O(1)
         return;
       }
@@ -13,11 +13,11 @@ public class Set<T> {
         firstFreeSpot = i; // O(1)
       }
     }
-    set[firstFreeSpot] = item;  // O(1)
+    set[firstFreeSpot] = item; // O(1)
   }
 
   public boolean contains(T item) { // O(n)
-    for (T currentItem: set) { // O(n)
+    for (T currentItem : set) { // O(n)
       if (currentItem == item) { // O(1)
         return true;
       }
